@@ -6,7 +6,7 @@
 /*   By: maballet <maballet@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/11 17:18:43 by maballet          #+#    #+#             */
-/*   Updated: 2025/12/11 23:39:59 by maballet         ###   ########lyon.fr   */
+/*   Updated: 2025/12/15 15:51:29 by maballet         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,14 @@
 # define FIXED_HPP
 
 # include <iostream>
+
+/*
+This class defines the canonical form of a C++ class (rule of three ) and it provides:
+
+- A default constructor, to create a new fixed object.
+- A copy constructor, to initialize a Fixed object from another one.
+- A copy assignment operator, to assign the value of one Fixed object to another existing one.
+*/
 
 class Fixed {
 
