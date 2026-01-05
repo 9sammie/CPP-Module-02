@@ -6,24 +6,25 @@
 /*   By: maballet <maballet@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/11 17:25:19 by maballet          #+#    #+#             */
-/*   Updated: 2025/12/15 17:19:42 by maballet         ###   ########lyon.fr   */
+/*   Updated: 2026/01/05 14:54:00 by maballet         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Fixed.hpp"
+
+// Here we have the default constructor
 
 Fixed::Fixed (): _value(0) {
 
 	std::cout << "Default constructor called" << std::endl;
 }
 
-/*
-Here the int becomes a fixed-point representation.
-since _fractBits is 8, the integer will be shifted on the left by 8 bits.
-equivalent to multiply by 256, allowing the value to be stored with a
-fixed fractional precision.
-*/
-Fixed::Fixed ( const int input ): _value(input) {
+// Here the int becomes a fixed-point representation.
+// since _fractBits is 8, the integer will be shifted on the left by 8 bits.
+// equivalent to multiply by 256, allowing the value to be stored with a
+// fixed fractional precision.
+
+Fixed::Fixed ( const int input ) {
 
 	std::cout << "Int constructor called" << std::endl;
 	_value = input << _fractBits;
@@ -40,7 +41,7 @@ Example:
   input = 42.42
   stored value ≈ roundf(42.42 * 256) = 10860
 */
-Fixed::Fixed ( const float input ): _value(input) {
+Fixed::Fixed ( const float input ) {
 
 	std::cout << "Float constructor called" << std::endl;
 	_value = roundf(input * (1 << _fractBits));

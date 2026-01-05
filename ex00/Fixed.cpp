@@ -6,7 +6,7 @@
 /*   By: maballet <maballet@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/11 17:25:19 by maballet          #+#    #+#             */
-/*   Updated: 2025/12/11 23:39:14 by maballet         ###   ########lyon.fr   */
+/*   Updated: 2026/01/05 14:38:44 by maballet         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ Fixed& Fixed::operator = ( const Fixed& other ) {
 
 	std::cout << "Copy assignment operator called" << std::endl;
 	if  (this != &other )
-		this->_value = other._value;
+		this->_value = other.getRawBits();
 	return *this;
 }
 
