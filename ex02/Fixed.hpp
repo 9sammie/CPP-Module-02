@@ -6,7 +6,7 @@
 /*   By: maballet <maballet@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/11 17:18:43 by maballet          #+#    #+#             */
-/*   Updated: 2026/01/21 13:08:02 by maballet         ###   ########lyon.fr   */
+/*   Updated: 2026/01/21 17:28:29 by maballet         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 #define STD			"\033[0m"
 #define GREEN		"\033[38;5;34m\033[48;5;193m"
-#define GREYBG	"\033[48;5;237m\033[1m"
+#define GREYBGBOLD	"\033[48;5;237m\033[1m"
 
 # include <iostream>
 # include <cmath>
