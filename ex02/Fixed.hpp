@@ -6,7 +6,7 @@
 /*   By: maballet <maballet@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/11 17:18:43 by maballet          #+#    #+#             */
-/*   Updated: 2026/01/21 17:28:29 by maballet         ###   ########lyon.fr   */
+/*   Updated: 2026/01/21 17:37:17 by maballet         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,6 @@
 #define true 1
 #define false 0
 
-/*
-This class introduces the notion of a controlled type conversion.
-*/
 class Fixed {
 
 	private:

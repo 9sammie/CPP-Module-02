@@ -6,24 +6,23 @@
 /*   By: maballet <maballet@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/11 17:25:19 by maballet          #+#    #+#             */
-/*   Updated: 2026/01/05 14:54:00 by maballet         ###   ########lyon.fr   */
+/*   Updated: 2026/01/21 17:38:23 by maballet         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Fixed.hpp"
-
-// Here we have the default constructor
 
 Fixed::Fixed (): _value(0) {
 
 	std::cout << "Default constructor called" << std::endl;
 }
 
-// Here the int becomes a fixed-point representation.
-// since _fractBits is 8, the integer will be shifted on the left by 8 bits.
-// equivalent to multiply by 256, allowing the value to be stored with a
-// fixed fractional precision.
-
+/*
+Here the int becomes a fixed-point representation.
+since _fractBits is 8, the integer will be shifted on the left by 8 bits.
+equivalent to multiply by 256, allowing the value to be stored with a
+fixed fractional precision.
+*/
 Fixed::Fixed ( const int input ) {
 
 	std::cout << "Int constructor called" << std::endl;
