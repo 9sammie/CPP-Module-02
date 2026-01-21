@@ -6,7 +6,7 @@
 /*   By: maballet <maballet@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/11 17:25:19 by maballet          #+#    #+#             */
-/*   Updated: 2025/12/16 11:47:57 by maballet         ###   ########lyon.fr   */
+/*   Updated: 2026/01/21 10:55:26 by maballet         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -146,16 +146,12 @@ Fixed Fixed::operator * ( const Fixed &number ) const {
 	return result;
 }
 
-// Faire un << permet de 
-
 Fixed Fixed::operator / ( const Fixed &number ) const {
 
 	Fixed result;
 	result.setRawBits((this->_value << this->_fractBits) / number._value);
 	return result;
 }
-
-//
 
 Fixed& Fixed::operator ++ () {
 

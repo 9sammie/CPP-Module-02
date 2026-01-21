@@ -6,12 +6,16 @@
 /*   By: maballet <maballet@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/11 17:18:43 by maballet          #+#    #+#             */
-/*   Updated: 2025/12/16 11:40:34 by maballet         ###   ########lyon.fr   */
+/*   Updated: 2026/01/21 13:08:02 by maballet         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FIXED_HPP
 # define FIXED_HPP
+
+#define STD			"\033[0m"
+#define GREEN		"\033[38;5;34m\033[48;5;193m"
+#define GREYBG	"\033[48;5;237m\033[1m"
 
 # include <iostream>
 # include <cmath>
@@ -58,10 +62,10 @@ class Fixed {
 	Fixed operator ++ (int);
 	Fixed& operator -- ();
 	Fixed operator -- (int);
-	Fixed& min(Fixed& a, Fixed& b);
-	Fixed& max(Fixed& a, Fixed& b);
-	const Fixed& min(const Fixed& a, const Fixed& b);
-	const Fixed& max(const Fixed& a, const Fixed& b);
+	static Fixed& min(Fixed& a, Fixed& b);
+	static Fixed& max(Fixed& a, Fixed& b);
+	static const Fixed& min(const Fixed& a, const Fixed& b);
+	static const Fixed& max(const Fixed& a, const Fixed& b);
 	
 };
 
